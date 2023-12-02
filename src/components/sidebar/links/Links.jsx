@@ -26,7 +26,7 @@ const itemVariants = {
 };
 
 const Links = () => {
-  const items = ["Homepage", "Services", "Portfolio", "Contact", "About"];
+  const items = ["Homepage", "Services", "Portfolio", "Contact", "Resume"];
   const [cursorVariant, setCursorVariant] = useAtom(variantName);
   const mouseEnter = () => {
     setCursorVariant("sidebar");
@@ -44,9 +44,10 @@ const Links = () => {
       onMouseEnter={mouseEnter}
       onMouseLeave={mouseLeave}
     >
-      {items.map((item) => (
+      {items.map((item, index) => (
         <motion.a
-          href={`#${item}`}
+          href={index !== 4 ? `#${item}` : "/resume.pdf"}
+          download={index === 4 ? true : false}
           key={item}
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}

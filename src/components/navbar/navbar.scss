@@ -18,6 +18,7 @@
 
     span {
       font-weight: bold;
+      padding-left: 5rem;
 
       @include mobile {
         display: none;

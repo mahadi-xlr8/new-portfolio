@@ -79,6 +79,7 @@ const Hero = () => {
               variants={textVariants}
               onMouseEnter={mouseEnter}
               onMouseLeave={mouseLeave}
+              onClick={()=>window.location="/#Portfolio"}
             >
               See the Latest Works
             </motion.button>
@@ -86,6 +87,8 @@ const Hero = () => {
               variants={textVariants}
               onMouseEnter={mouseEnter}
               onMouseLeave={mouseLeave}
+              onClick={()=>window.location="/#Contact"}
+
             >
               Contact Me
             </motion.button>
@@ -104,7 +107,7 @@ const Hero = () => {
         initial="initial"
         animate="animate"
       >
-        Writer Content Creator Influencer
+        Hire Me
       </motion.div>
       <div className="imageContainer">
         <img src="/me.png" alt="" />

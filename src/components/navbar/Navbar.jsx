@@ -24,20 +24,40 @@ const Navbar = () => {
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
         >
-          Lama Dev
+          Mahadi Hasan
         </motion.span>
         <div className="social">
-          <a href="#" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+          <a
+            href="https://www.facebook.com/Mahadi.Arju420/"
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+            target="_blank"
+          >
             <img src="/facebook.png" alt="" />
           </a>
-          <a href="#" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
-            <img src="/instagram.png" alt="" />
-          </a>
-          <a href="#" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+          <a
+            href="https://www.youtube.com/@TheDank69"
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+            target="_blank"
+          >
             <img src="/youtube.png" alt="" />
           </a>
-          <a href="#" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
-            <img src="/dribbble.png" alt="" />
+          <a
+            href="https://www.linkedin.com/in/mehedi-xlr8/"
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+            target="_blank"
+          >
+            <img src="/linkedin.png" alt="" />
+          </a>
+          <a
+            href="https://github.com/mahadi-xlr8"
+            onMouseEnter={mouseEnter}
+            onMouseLeave={mouseLeave}
+            target="_blank"
+          >
+            <img src="/github.png" alt="" />
           </a>
         </div>
       </div>

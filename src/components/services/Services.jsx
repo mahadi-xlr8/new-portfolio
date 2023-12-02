@@ -70,7 +70,7 @@ const Services = () => {
             Business.
           </h1>
           <button onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
-            WHAT WE DO?
+            WHAT I DO?
           </button>
         </div>
       </motion.div>
@@ -78,52 +78,63 @@ const Services = () => {
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
         >
-          <h2>Branding</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+          <h2>Development</h2>
+          <p style={{ margin: "1rem 0" }}>
+            As a skilled MERN stack web developer, I specialize in transforming
+            ideas into dynamic digital platforms. My expertise in the MERN stack
+            allows me to craft robust, scalable, and interactive websites.
           </p>
           <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
         >
-          <h2>Branding</h2>
+          <h2>Frontend</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            I have exceptional ability to convert Figma designs into React code,
+            a skill that sets me apart in the world of web development. My
+            expertise lies not just in coding but in meticulously translating
+            design visions into functional, responsive, and visually captivating
+            web applications.
           </p>
           <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
         >
-          <h2>Branding</h2>
+          <h2>Backend</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            I specialize in crafting robust backend solutions using cutting-edge
+            technologies to power dynamic and scalable web applications. With a
+            strong command of Node.js, Express and Websocket I create efficient,
+            high-performance APIs and server-side logic, ensuring seamless
+            integration with front-end systems.
           </p>
           <button>Go</button>
         </motion.div>
         <motion.div
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
+          onMouseEnter={mouseEnter}
+          onMouseLeave={mouseLeave}
         >
-          <h2>Branding</h2>
+          <h2>SEO</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-            libero enim nisi aliquam consectetur expedita magni eius ex corrupti
-            animi! Ad nam pariatur assumenda quae mollitia libero repellat
-            explicabo maiores?
+            Beyond crafting exceptional websites, I specialize in maximizing
+            online visibility and organic traffic through strategic Search
+            Engine Optimization (SEO) techniques. My approach to SEO combines
+            technical expertise, content optimization, and data-driven
+            strategies to propel websites to the forefront of search engine
+            rankings.
           </p>
           <button>Go</button>
         </motion.div>

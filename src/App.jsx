@@ -16,17 +16,17 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
+      <section id="Services" style={{ height: "100vh" }}>
         <Parallax type="services" />
       </section>
       <section>
         <Services />
       </section>
-      <section id="Portfolio">
+      <section id="Portfolio" style={{ height: "100vh" }}>
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
-      <section id="Contact">
+      <section id="Contact" style={{ height: "120vh" }}>
         <Contact />
       </section>
       {/* Framer Motion Crash Course */}
