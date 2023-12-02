@@ -4,6 +4,7 @@ import { motion, useInView } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { variantName } from "../../cursorVariant";
 import { useAtom } from "jotai";
+import { toast } from "react-hot-toast";
 
 const variants = {
   initial: {
@@ -23,8 +24,6 @@ const variants = {
 const Contact = () => {
   const ref = useRef();
   const formRef = useRef();
-  const [error, setError] = useState(false);
-  const [success, setSuccess] = useState(false);
 
   const isInView = useInView(ref, { margin: "-100px" });
   const [cursorVariant, setCursorVariant] = useAtom(variantName);
@@ -43,17 +42,18 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_25tpis8",
+        "template_l1xe9in",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "5WhjSpQHbjZrxS6bD"
       )
       .then(
         (result) => {
-          setSuccess(true);
+          toast.success("Email sended successfully!");
+          e.target.reset();
         },
         (error) => {
-          setError(true);
+          toast.error("Failed to send email!");
         }
       );
   };
@@ -145,8 +145,6 @@ const Contact = () => {
           <button onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
             Submit
           </button>
-          {error && "Error"}
-          {success && "Success"}
         </motion.form>
       </div>
     </motion.div>
