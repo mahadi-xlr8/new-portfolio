@@ -110,7 +110,7 @@ const Hero = () => {
         Hire Me
       </motion.div>
       <div className="imageContainer">
-        <img src="/me.png" alt="" />
+        <img src="/meEdited.png" alt="" />
       </div>
     </div>
   );

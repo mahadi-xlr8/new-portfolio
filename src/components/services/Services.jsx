@@ -66,8 +66,8 @@ const Services = () => {
         </div>
         <div className="title">
           <h1 onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
-            <motion.b whileHover={{ color: "orange" }}>For Your</motion.b>{" "}
-            Business.
+            <motion.b whileHover={{ color: "orange" }}>To</motion.b>{" "}
+            Website.
           </h1>
           <button onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
             WHAT I DO?
@@ -81,13 +81,13 @@ const Services = () => {
           onMouseEnter={mouseEnter}
           onMouseLeave={mouseLeave}
         >
-          <h2>Development</h2>
+          <h2>Full-Stack</h2>
           <p style={{ margin: "1rem 0" }}>
             As a skilled MERN stack web developer, I specialize in transforming
             ideas into dynamic digital platforms. My expertise in the MERN stack
             allows me to craft robust, scalable, and interactive websites.
           </p>
-          <button>Go</button>
+          <button onClick={()=>window.location="/#Contact"}>Go</button>
         </motion.div>
         <motion.div
           className="box"
@@ -103,7 +103,7 @@ const Services = () => {
             design visions into functional, responsive, and visually captivating
             web applications.
           </p>
-          <button>Go</button>
+          <button onClick={()=>window.location="/#Contact"}>Go</button>
         </motion.div>
         <motion.div
           className="box"
@@ -113,13 +113,13 @@ const Services = () => {
         >
           <h2>Backend</h2>
           <p>
-            I specialize in crafting robust backend solutions using cutting-edge
-            technologies to power dynamic and scalable web applications. With a
-            strong command of Node.js, Express and Websocket I create efficient,
-            high-performance APIs and server-side logic, ensuring seamless
-            integration with front-end systems.
+            I specialize in robust backend development using Express for API
+            creation, MongoDB for data storage, and Socket.IO for real-time
+            communication. Crafting scalable, efficient solutions is my forte,
+            ensuring seamless functionality and performance for your project's
+            backend needs.
           </p>
-          <button>Go</button>
+          <button onClick={()=>window.location="/#Contact"}>Go</button>
         </motion.div>
         <motion.div
           className="box"
@@ -136,7 +136,7 @@ const Services = () => {
             strategies to propel websites to the forefront of search engine
             rankings.
           </p>
-          <button>Go</button>
+          <button onClick={()=>window.location="/#Contact"}>Go</button>
         </motion.div>
       </motion.div>
     </motion.div>

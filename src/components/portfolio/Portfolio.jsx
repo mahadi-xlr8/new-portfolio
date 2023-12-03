@@ -7,27 +7,45 @@ import { useAtom } from "jotai";
 const items = [
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Creator's Hub",
+    img: "/creatorsHub.png",
+    desc: "A web-based project to help brands to find the best suitable social media influencer to promote their products or services. I used MERN (MongoDB, Express, React, Node) technology to build the website.",
+    link: "https://github.com/mahadi-xlr8/creators-hub",
   },
   {
     id: 2,
-    title: "Next.js Blog",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Site Hosting",
+    img: "/hosting.png",
+    desc: "As the name suggests, it is a web hosting site where users can host their website and it was only a frontend project. I build the front-end only using raw HTML, CSS, and JavaScript.",
+    link: "https://github.com/mahadi-xlr8/hosting-site-front-end",
   },
   {
     id: 3,
-    title: "Vanilla JS App",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Chat App",
+    img: "/chatApp.png",
+    desc: "This is a web-based project where people can chat with their friends. their chats are encrypted with the help of bcrypt npm package. I built this app using MERN stack technology and for bidirectional communication I used Socket.io.",
+    link: "https://github.com/mahadi-xlr8/group-chat-with-socket-io",
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "TODO",
+    img: "/todo.png",
+    desc: "A website to manage your to-do list. MERN stack technology was used here also.",
+    link: "https://github.com/mahadi-xlr8/todo-with-mongoose",
+  },
+  {
+    id: 5,
+    title: "Insurance Prediction",
+    img: "/insurance.png",
+    desc: "A GUI application, where a user can input his/her information and get a prediction of how much he/she needs to pay for medical insurance. the model was trained with some data from the USA. Which I found on Kaggle. For UI I used Tkinter.",
+    link: "https://github.com/mahadi-xlr8/Medical-Insurance-Cost-Prediction-using-ML",
+  },
+  {
+    id: 6,
+    title: "Class Routine",
+    img: "/routine.png",
+    desc: "This project was built during the COVID times. A GUI application where students can see their class updates and google meet links and teachers can update their class routine in real time. For UI I used Tkinter and MySql for the database.",
+    link: "https://github.com/mahadi-xlr8/Routine-using-Mysql",
   },
 ];
 
@@ -55,7 +73,7 @@ const Single = ({ item }) => {
       <div className="container">
         <div className="wrapper">
           <div className="imageContainer" ref={ref}>
-            <img src={item.img} alt="" />
+            <img src={item.img} style={{ objectFit: "contain" }} alt="" />
           </div>
           <motion.div className="textContainer" style={{ y }}>
             <h2 onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
@@ -64,8 +82,12 @@ const Single = ({ item }) => {
             <p onMouseEnter={mouseEnterMini} onMouseLeave={mouseLeave}>
               {item.desc}
             </p>
-            <button onMouseEnter={mouseEnterMini} onMouseLeave={mouseLeave}>
-              See Demo
+            <button
+              onMouseEnter={mouseEnterMini}
+              onMouseLeave={mouseLeave}
+              onClick={() => (window.location = item.link)}
+            >
+              Link
             </button>
           </motion.div>
         </div>
