@@ -7,10 +7,16 @@ import Navbar from "./components/navbar/Navbar";
 import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Services from "./components/services/Services";
+import { Helmet } from "react-helmet";
 
 const App = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Mahadi Hasan</title>
+        <meta name="description" content="Mahadi Hasan's portfolio website" />
+      </Helmet>
       <Cursor />
       <section id="Homepage">
         <Navbar />
